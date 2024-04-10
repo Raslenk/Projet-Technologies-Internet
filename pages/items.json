@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name":" TURKEY PATTIES",
+        "price": 19.9,
+        "image": "../assets/Images/Pasted Graphic m2.png"
+    },
+    {
+        "id": 2,
+        "name":" DECONSTRUCTED BURGER SALAD",
+        "price": 23.9,
+        "image": "../assets/Images/Pasted Graphic m3.png"
+    },
+    {
+        "id": 3,
+        "name":" ROASTED CHICKEN",
+        "price": 23.9,
+        "image": "../assets/Images/Pasted Graphic m4.png"
+    },
+    {
+        "id": 4,
+        "name":" CHICKEN POTPIE",
+        "price": 22.5,
+        "image": "../assets/Images/Pasted Graphic m5.png"
+    },
+    {
+        "id": 5,
+        "name":" TUNA POKE BOWL",
+        "price": 19.9,
+        "image": "../assets/Images/Pasted Graphic m6.png"
+    },
+    {
+        "id": 6,
+        "name":" GRILLED CHICKEN",
+        "price": 21.9,
+        "image": "../assets/Images/Pasted Graphic m7.png"
+    },
+    {
+        "id": 7,
+        "name":" TURKEY PLAT HASH",
+        "price": 19.9,
+        "image": "../assets/Images/Pasted Graphic m8.png"
+    },
+    {
+        "id": 8,
+        "name":" HERB RIGATONI",
+        "price": 23.5,
+        "image": "../assets/Images/Pasted Graphic  m1.png"
+    }
+]

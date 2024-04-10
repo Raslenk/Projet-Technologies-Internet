@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Corail</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/Images/logo.jpg"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" id="login2">&times;</span>
+        <iframe
+          src="signin.html"
+          style="width: 100%; border: none; height: 100%"
+          name="modalC"
+        ></iframe>
+      </div>
+    </div>
+    <header>
+      <div class="header">
+        <div class="header_bar">
+          <div class="account">
+            <ul>
+              <a href="../pages/index.html"
+                ><li><i class="fa-solid fa-house"></i></li
+              ></a>
+              <a href="#"
+                ><li>
+                  <i
+                    class="fa-solid fa-magnifying-glass searchicon"
+                    id="searchicon1"
+                  ></i></li
+              ></a>
+              <div class="search">
+                <input type="search" />
+                <i
+                  class="fa-solid fa-magnifying-glass srchicon"
+                  id="srchicon1"
+                ></i>
+              </div>
+              <a href="#"
+                ><li><i class="fa-solid fa-user" id="user-mb"></i></li
+              ></a>
+            </ul>
+          </div>
+          <div class="navbar">
+            <ul>
+              <a href="../pages/index.html"><li>Home</li></a>
+              <a href="../pages/about.html"><li>About</li></a>
+              <a href="../pages/menu.html"><li>Food Menu</li></a>
+            </ul>
+          </div>
+        </div>
+
+        <div class="logo">
+          <img src="../assets/Images/logoficiel1.jpg" alt="logo oficiel" />
+        </div>
+
+        <div class="bar">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark" id="hdcross"></i>
+        </div>
+
+        <div class="navbar">
+          <ul>
+            <a href="../pages/index.html"><li>Home</li></a>
+            <a href="../pages/about.html"><li>About</li></a>
+            <a href="../pages/menu.html"><li>Food Menu</li></a>
+          </ul>
+        </div>
+
+        <div class="account">
+          <ul>
+            <a href="../pages/index.html"
+              ><li><i class="fa-solid fa-house"></i></li
+            ></a>
+            <a href="#"
+              ><li>
+                <i
+                  class="fa-solid fa-magnifying-glass searchicon"
+                  id="searchicon2"
+                ></i></li
+            ></a>
+            <div class="search" id="searchinput2">
+              <input type="search" />
+              <i
+                class="fa-solid fa-magnifying-glass srchicon"
+                id="srchicon2"
+              ></i>
+            </div>
+            <a href="#" id="login1"
+              ><li><i class="fa-solid fa-user" id="user-lap"></i></li
+            ></a>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="home">
+      <div class="main_slide">
+        <div>
+          <h1>Enjoy <span>Delicious Food</span> In Your Healthy Life</h1>
+          <p>
+            Exploring the flavors of the world is a culinary adventure that
+            invites discovery and personal enrichment. Each dish tells a story,
+            conveying the traditions and passions of the cooks who prepare them.
+            In our pursuit of a healthy lifestyle, we incorporate fresh and
+            nutritious ingredients, while preserving the essence and
+            authenticity of flavors. Join us on an exceptional gustatory
+            journey, where every bite is a celebration of culinary diversity and
+            well-being.
+          </p>
+          <button id="mapButton" class="btn_vn">
+            Visit Now <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+        <div>
+          <img src="../assets/Images/Pasted Graphic 2.png" alt="Main course " />
+        </div>
+      </div>
+
+      <div class="food-items">
+        <div class="item">
+          <div>
+            <img src="../assets/Images/Pasted Graphic 3.png" alt="food item" />
+          </div>
+          <h3>Steak Plate</h3>
+          <p>
+            Dive into culinary bliss with our Steak Plate, a symphony of grilled
+            flavors!
+          </p>
+          <button class="btn_sm" onclick="window.location.href='../pages/menu.html'">See Menu</button>
+        </div>
+        <div class="item">
+          <div>
+            <img src="../assets/Images/Pasted Graphic 7.png" alt="food item" />
+          </div>
+          <h3>Caprese Plate</h3>
+          <p>
+            Savor our Caprese Plate, a sun-kissed dance of tomatoes, mozzarella,
+            and basil!
+          </p>
+          <div class="button-container">
+            <button class="btn_sm" onclick="window.location.href='../pages/menu.html'">See Menu</button>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <img src="../assets/Images/Pasted Graphic 10.png" alt="food item" />
+          </div>
+          <h3>Spaghetti Carbonara Plate</h3>
+          <p>Savor Italy with our one-bite Spaghetti Carbonara!</p>
+          <button class="btn_sm" onclick="window.location.href='../pages/menu.html'">See Menu</button>
+        </div>
+      </div>
+
+      <div class="main_slide2">
+        <div class="food-img">
+          <img src="../assets/Images/Pasted Graphic 13.png" alt="" />
+        </div>
+        <div class="question">
+          <div><h2>Why People Choose Us ?</h2></div>
+          <div>
+            <div class="q-ans">
+              <div>
+                <img src="../assets/Images/Pasted Graphic 16.png" alt="" />
+              </div>
+              <dir>
+                <h4>Choose Your Favourite</h4>
+                <p>
+                  Savor the journey to your favorite dish, where every choice is
+                  an exploration of unmatched flavors and culinary
+                  craftsmanship. Experience the art of dining with us.
+                </p>
+              </dir>
+            </div>
+            <div class="q-ans">
+              <div>
+                <img src="../assets/Images/Pasted Graphic 15.png" alt="" />
+              </div>
+              <dir>
+                <h4>Choose Your Favourite</h4>
+                <p>
+                  Unveil the flavors waiting just for you, where each selection
+                  is a gateway to unparalleled culinary delights. Dive into a
+                  world crafted from the finest ingredients and innovative
+                  cooking techniques.
+                </p>
+              </dir>
+            </div>
+            <div class="q-ans">
+              <div>
+                <img src="../assets/Images/Pasted Graphic 14.png" alt="" />
+              </div>
+              <dir>
+                <h4>Choose Your Favourite</h4>
+                <p>
+                  Embark on a flavor quest where your preferences shape the
+                  journey. Discover dishes that blend tradition with creativity,
+                  offering a dining experience that's uniquely yours.
+                </p>
+              </dir>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main_slide3">
+        <div class="fav-head">
+          <h3>Our Popular Food Items</h3>
+          <p>
+            Explore our collection of beloved dishes, each celebrated for its
+            unique flavor and crafted with the finest ingredients. From the
+            freshness of the sea to the richness of the land, our menu is a
+            testament to culinary excellence and innovation. Experience the
+            dishes that have captured the hearts of our customers.
+          </p>
+        </div>
+        <div class="fav-food">
+          <div class="item">
+            <div>
+              <img src="../assets/Images/Pasted Graphic 14.png" alt="" />
+              <h3>BOL POKE</h3>
+              <p>
+                Fresh tuna poke with avocado, cucumber, and soy-sesame dressing
+              </p>
+              <p class="fav-price">$2.90</p>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="../assets/Images/Pasted Graphic 15.png" alt="" />
+              <h3>THE SALAD BOWL</h3>
+              <p>
+                Crisp greens, tomatoes, cucumbers, onion, feta, and dressing
+              </p>
+              <p class="fav-price">$2.90</p>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="../assets/Images/Pasted Graphic 16.png" alt="" />
+              <h3>GRILLED SALMON FILLET</h3>
+              <p>Perfectly grilled salmon with seasonal vegetables</p>
+              <p class="fav-price">$2.90</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main_slide4">
+        <div class="chef-feed">
+          <h2>Customer <span style="color: #ffa101">Feedback</span></h2>
+          <p>
+            Discovering this place has been a game-changer for my dining
+            experiences. The attention to detail, the quality of the
+            ingredients, and the creativity of the menu have consistently
+            impressed me. Every visit is a new adventure for the palate, and the
+            warmth of the service makes each meal a pleasure. I've recommended
+            it to all my friends and family because it's more than just eating
+            out—it's about enjoying a culinary journey that never fails to
+            delight and surprise.
+          </p>
+          <div class="chef-detail">
+            <div>
+              <img src="../assets/Images/logo.jpg" alt="" />
+            </div>
+            <div>
+              <h6>Le Corail</h6>
+            </div>
+          </div>
+          <div class="chef_vic">
+            <div>
+              <i class="fa-solid fa-hand-peace"></i>
+              <h5>68</h5>
+              <p>Years of Exceptional Service.</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-trophy"></i>
+              <h5>956</h5>
+              <p>Awards and Recognition.</p>
+            </div>
+          </div>
+        </div>
+        <div class="chef">
+          <img src="../assets/Images/Pasted Graphic 100.png" alt="" />
+        </div>
+      </div>
+
+      <div class="letter">
+        <div class="letter_head">
+          <h2>Subscribe <span>Newsletter</span></h2>
+        </div>
+        <div class="letter_input">
+          <div>
+            <input type="email" name="email" id="emailInput" placeholder="yourname@example.com" required />
+          </div>
+          <button type="submit" id="subscribeButton"  class="btn_vn">Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-1">
+        <div class="logo">
+          <img src="../assets/Images/logoficiel.jpg" alt="" />
+        </div>
+        <div>
+          <address>
+            <p>Our Address: 283 Boul. Alexandre-Taché, Gatineau</p>
+            <p>Phone Number: (819)123-1234</p>
+            <p>Email: le_corail@resto.com</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-2">
+        <img src="../assets/Images/logo.jpg" alt="" />
+        <h3>Copyright (c) 2024 Le Corail</h3>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

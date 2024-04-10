@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUP</title>
+    <link rel="stylesheet" href="../styles/style-sign.css" />
+</head>
+<body>
+    <div class="signup-container"> 
+        <h2>Sign Up</h2>
+        <form action="signup.php" method="post">
+            <div class="form-group">
+                <label>Enter Full Name:</label>
+                <input type="text" name="nom" placeholder="Full Name" required />
+            </div>
+            <div class="form-group">
+                <label>Enter E-mail:</label>
+                <input type="email" name="email" placeholder="E-mail" required />
+            </div>
+            <div class="form-group">
+                <label>Enter your password:</label>
+                <input type="password" name="password" placeholder="Password" required />
+            </div>
+            <div class="form-group">
+                <label>Confirm password:</label>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required />
+            </div>
+            <div class="form-group" style="text-align: center">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+        <div>
+            Don't have an account? <a href="signin.html" target="modalC">Sign In</a>
+        </div>
+    </div>
+</body>
+</html>

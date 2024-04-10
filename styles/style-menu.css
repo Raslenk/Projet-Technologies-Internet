@@ -1,0 +1,455 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body{
+    background-color: #B3DEE5;
+}
+
+.header_bar{
+    display: none;
+}
+
+.searchicon{
+    display: block;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.bar{
+    display: none;
+}
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 7vw;
+    background-color:#B3DEE5;
+    border-bottom: 2px solid #FAE6B1 ;
+    box-shadow: 0 2px 15px  #ffa101 ;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+}
+
+.header ul li:hover{
+    color: #ffa101 ;
+}
+
+.navbar ul li{
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight:bold ;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color:rgb(56,84,26) ;
+}
+
+.account {
+    flex: 0.1;
+}
+
+.account ul{
+    display: flex;
+    justify-content: end;
+}
+
+.account ul li{
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+.bar i:hover{
+    color: rgb(56,84,26);
+}
+
+.search{
+    display: none;
+    width: 200px;
+    justify-content: center;
+}
+
+.search input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+.srchicon{
+    background-color:  #ffa101;
+    display: block;
+    padding: 4px 5px;
+    cursor: pointer;
+}
+
+.header .account .fa-house,
+.header .account .fa-magnifying-glass,
+.header .account .fa-user,
+.bar .fa-xmark,
+header .icon-cart{
+    color:rgb(56,84,26) ;
+}
+
+
+body{
+    margin: 0;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.container{
+    width: 900px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+svg{
+    width: 30px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+header .icon-cart span{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: #ffa101;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.icon-cart svg {
+    height: 24px;
+    width: auto;
+    fill: rgb(56,84,26);
+  }
+header .icon-cart{
+    position: relative;
+    top: 0;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75em;
+}
+.listProduct .item img{
+    width: 150px;
+    height: 150px;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+
+.listProduct .item{
+    background-color: beige;
+    padding: 50px;
+    border-radius: 20px;
+}
+.listProduct .item h2{
+    font-weight: 500;
+    font-size: large;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: rgb(56, 84, 26);
+}
+.listProduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.listProduct .item button{
+    background-color: #ffa101;
+    color: rgb(56,84,26);
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Montserrat Alternates", sans-serif;
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.listProduct .item button i{
+    color: rgb(56, 84, 26);
+  transition: all 0.2s;
+}
+
+.listProduct .item button:hover{
+    background-color: rgb(56, 84, 26);
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  border: 1px solid rgb(75, 106, 43);
+  color: #ffa101;
+}
+
+.listProduct .item button:hover i {
+    color: #ffa101;
+}
+
+.cartTab{
+    width: 400px;
+    background-color: #80acb7;
+    color: #eee;
+    position: fixed;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+body.showCart .cartTab{
+    inset: 0 0 0 auto;
+}
+body.showCart .container{
+    transform: translateX(-250px);
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+    color: rgb(56, 84, 26);
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab .btn button{
+    background-color: #ffa101;
+    border: none;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cartTab .btn .close{
+    background-color: beige;
+}
+.cartTab .listCart .item img{
+    width: 100%;
+}
+.cartTab .listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+
+.container .listProduct{
+    padding-top: 35px;
+    margin-bottom: 350px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+}
+
+.cartTab .listCart .name,
+.cartTab .listCart .totalPrice,
+.cartTab .listCart .quantity .minus ,
+.cartTab .listCart .quantity .plus{
+    color: rgb(56, 84, 26);
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.footer{
+    padding: 60px;
+    border-top: 2px solid #FAE6B1;
+    background-color: #B3DEE5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 35px;
+}
+
+.footer-1 .logo img{
+    width: 200px;
+}
+
+.footer-1 p{
+    cursor: pointer;
+    font-size: 14px;
+    padding: 2px;
+    color: #31525b;
+}
+
+.footer-2{
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer-2 h3{
+    font-family: "Montserrat Alternates", sans-serif;
+    color: rgb(56,84,26);
+}
+
+.footer-2 img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 4px solid white;
+}
+
+@media only screen and (max-width: 992px) {
+    .listProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .header .navbar, .header.account{
+        display: none;
+    }
+
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .search{
+        width: 60vw;
+    }
+
+    .bar{
+        display: block;
+        cursor: pointer;
+    }
+
+    .header_bar{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        bottom:0 ;
+        right:-100%;
+        transition: all 0.5s;
+        background-color: #B3DEE5;
+    }
+
+    .header .account, .header_bar .navbar{
+        display: block;
+        font-size: 18px;
+    }
+
+    .bar .fa-xmark{
+        display: none;
+        top: 20px;
+        right: 5vw;
+        position: absolute;
+        font-size: 25px;
+    }
+
+    .header_bar .navbar ul{
+        flex-direction: column;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .header_bar .navbar li{
+        width: 96vw;
+        margin: 10px 0;
+        padding: 15px 30px;
+        box-shadow: 0 2px 15px #31525b;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .header_bar .account{
+        line-height: 40px;
+        margin-top: 60px;
+        background-color:#80acb7 ;
+        padding: 15px;
+    }
+
+    .header_bar .account ul{
+        justify-content: space-between;
+    }
+    .footer .footer-1 div{
+        margin: 0;
+    }
+
+    .footer div{
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+
+    .footer div:last-child{
+        margin-bottom: 0;
+    }
+
+    .footer{
+        padding-bottom: 25px;
+    }
+
+    .footer-2 h3{
+        font-size: 20px;
+    }
+}

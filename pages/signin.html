@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIN</title>
+    <link rel="stylesheet" href="../styles/style-sign.css" />
+</head>
+<body>
+    <div class="form-container">
+        <h2>Sign In</h2>
+        <form action="signin.php" method="post">
+            <div class="form-group">
+                <label>Enter your email:</label>
+                <input type="email" name="email" placeholder="E-mail" required />
+            </div>
+            <div class="form-group">
+                <label>Enter your password:</label>
+                <input type="password" name="password" placeholder="Password" required />
+            </div>
+            <div class="form-group" style="text-align: center">
+                <button type="submit">Sign In</button>
+                <a href="forgot_password.php">Forgot password?</a>
+                <div>
+                    Don't have an account? <a href="signup.html">Sign Up</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
